@@ -18,13 +18,14 @@ jobs:
           command: sudo npm install -g eas-cli
 
       - run:
-          name: init eas build
-          command: eas init
-          
-      - run:
            name: Log in to EAS
            command: eas login -u ${EXPO_USERNAME} -p ${EXPO_PASSWORD}
 
+
+      - run:
+          name: init eas build
+          command: eas init
+          
       - run:
           name: Build Expo Project
           command: eas build --profile preview
