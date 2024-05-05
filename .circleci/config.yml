@@ -14,8 +14,16 @@ jobs:
           name: Install Dependencies
           command: npm install
       - run:
+          name: Install EAS CLI
+          command: npm install -g eas-cli
+
+      - run:
+          name: init eas build
+          command: eas init
+
+      - run:
           name: Build Expo Project
-          command: npx eas build --profile preview
+          command: eas build --profile preview
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
