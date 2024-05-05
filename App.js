@@ -120,7 +120,7 @@ export default function App() {
         <View style={{ flexDirection: 'row' }}>
           {updating ? (
             <TouchableOpacity onPress={updateOne} style={{ width: 100, padding: 5, backgroundColor: 'orange', marginTop: 5, borderRadius: 10 }}>
-              <Text style={{ color: 'white', textAlign: 'center' }}>Update</Text>
+              <Text style={{ color: 'white', textAlign: 'center' }}>Update </Text>
             </TouchableOpacity>
           ) : (
             <TouchableOpacity onPress={addData} style={{ padding: 5, backgroundColor: 'green', marginTop: 5, borderRadius: 10 }}>
